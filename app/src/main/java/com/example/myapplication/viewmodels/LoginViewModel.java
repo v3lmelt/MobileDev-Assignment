@@ -7,10 +7,11 @@ import android.view.View;
 
 import androidx.databinding.Bindable;
 import androidx.databinding.library.baseAdapters.BR;
+import androidx.navigation.Navigation;
+
+import com.example.myapplication.R;
 import com.example.myapplication.models.LoginModel;
 import com.example.myapplication.utilities.ObservableViewModel;
-import com.example.myapplication.views.LoginActivity;
-import com.example.myapplication.views.RegisterActivity;
 
 import javax.inject.Inject;
 import dagger.hilt.android.lifecycle.HiltViewModel;
@@ -50,9 +51,7 @@ public class LoginViewModel extends ObservableViewModel {
     }
 
     public void onRegisterButtonClicked(View view) {
-        Context context = view.getContext();
-        Intent intent = new Intent(context, RegisterActivity.class);
-        context.startActivity(intent);
+        Navigation.findNavController(view).navigate(R.id.action_loginFragment_to_registerFragment);
     }
 
     public void onLoginButtonClicked(View view) {
