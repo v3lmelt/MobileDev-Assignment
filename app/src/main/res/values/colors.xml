@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="tab_tint">#FF1296DB</color>
+    <color name="tab_untint">#FFDBDBDB</color>
 </resources>
