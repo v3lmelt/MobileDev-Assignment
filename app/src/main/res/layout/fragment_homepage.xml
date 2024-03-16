@@ -87,7 +87,7 @@
                     android:layout_height="30dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
-                    android:src="@mipmap/news"
+                    android:src="@mipmap/home"
                     android:tint="@color/tab_untint"
                     tools:ignore="UseAppTint" />
                 <TextView
@@ -108,22 +108,22 @@
                 android:layout_weight="1"
                 android:layout_marginTop="10dp">
                 <ImageView
-                    android:id="@+id/tab_person"
+                    android:id="@+id/tab_user"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
-                    android:src="@mipmap/news"
+                    android:src="@mipmap/user"
                     android:tint="@color/tab_untint"
                     tools:ignore="UseAppTint" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tab_person"
+                    android:layout_below="@id/tab_user"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="5dp"
                     android:gravity="center"
-                    android:text="@string/homepage_tab_person" />
+                    android:text="@string/homepage_tab_user" />
 
             </RelativeLayout>
             

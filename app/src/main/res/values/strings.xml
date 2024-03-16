@@ -11,6 +11,6 @@
     <string name="homepage_tab_news">新闻</string>
     <string name="homepage_tab_shoot">随手拍</string>
     <string name="homepage_tab_home">主页</string>
-    <string name="homepage_tab_person">个人</string>
+    <string name="homepage_tab_user">个人</string>
     <string name="homepage_title_news">校园新闻</string>
 </resources>
