@@ -13,6 +13,9 @@ import com.example.myapplication.databinding.FragmentLoginBinding;
 import com.example.myapplication.utilities.ViewFragment;
 import com.example.myapplication.viewmodels.LoginViewModel;
 
+import dagger.hilt.android.AndroidEntryPoint;
+
+@AndroidEntryPoint
 public class LoginFragment extends ViewFragment<LoginViewModel, FragmentLoginBinding> {
 
     @Override
