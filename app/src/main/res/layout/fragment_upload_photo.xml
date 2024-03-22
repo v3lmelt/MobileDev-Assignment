@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.PhotoUploadFragment">
+
+    <data>
+        <variable name="viewModel" type="com.example.myapplication.viewmodels.PhotoUploadFragment" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spinner_photo_upload_type"
+            android:layout_width="115dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="293dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textinput_photo_upload_title" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinput_photo_upload_desc"
+            android:layout_width="428dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/photo_upload_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_photo_upload_type" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinput_photo_upload_title"
+            android:layout_width="390dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:hint="@string/photo_upload_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_photo_upload_publish" />
+
+        <ImageView
+            android:id="@+id/imageview_photo_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="45dp"
+            android:src="@mipmap/fzu_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textinput_photo_upload_desc" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup_event_type"
+            android:layout_width="240dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageview_photo_preview">
+
+            <RadioButton
+                android:id="@+id/radio_event_important"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_event_important" />
+
+            <RadioButton
+                android:id="@+id/radio_event_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_event_normal" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_photo_upload_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="7dp"
+            android:text="@string/photo_button_publish"
+            app:layout_constraintBottom_toTopOf="@+id/textinput_photo_upload_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

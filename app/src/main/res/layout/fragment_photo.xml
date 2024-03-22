@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.PhotoFragment">
+
+    <data>
+        <variable name="viewModel" type="com.example.myapplication.viewmodels.PhotoViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Bg_photo_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/feedback_background"
+            tools:layout_editor_absoluteX="-26dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageButton
+            android:id="@+id/Btn_photo_upload"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="488dp"
+            android:src="@mipmap/take_pictures"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/Btn_photo_history"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="488dp"
+            android:src="@mipmap/history_records"
+            app:layout_constraintStart_toEndOf="@+id/Btn_photo_upload"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

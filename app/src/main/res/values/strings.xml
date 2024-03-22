@@ -13,4 +13,20 @@
     <string name="homepage_tab_home">主页</string>
     <string name="homepage_tab_user">个人</string>
     <string name="homepage_title_news">校园新闻</string>
+
+    <string name="photo_upload_title">请输入标题</string>
+    <string name="photo_upload_type">请选择分类</string>
+    <string name="photo_upload_desc">请输入问题描述</string>
+    <string name="photo_upload_location">所在位置</string>
+
+    <string name="photo_button_publish">发布</string>
+
+    <string name="photo_event_important">重要</string>
+    <string name="photo_event_normal">一般</string>
+
+    <string name="feedback_response_result">处理结果</string>
+    <string name="feedback_response_speed">处理速度</string>
+
+    <string name="feedback_desc_hint">评价该次处理，帮助学校改进校园隐患的处理</string>
+
 </resources>

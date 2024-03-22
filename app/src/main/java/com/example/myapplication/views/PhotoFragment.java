@@ -1,0 +1,29 @@
+package com.example.myapplication.views;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.myapplication.R;
+import com.example.myapplication.adapters.NewsRecycleViewAdapter;
+import com.example.myapplication.databinding.FragmentPhotoBinding;
+import com.example.myapplication.utilities.ViewFragment;
+import com.example.myapplication.viewmodels.PhotoViewModel;
+
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+public class PhotoFragment extends ViewFragment<PhotoViewModel, FragmentPhotoBinding> {
+
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.fragment_photo;
+    }
+}
